@@ -11,5 +11,6 @@ public:
 	NodeEdge();//Default Constructor
 	NodeEdge(Node point1, Node point2);//Overloaded Constructor
 
+	std::vector<Node> getPoints();
 	void draw(sf::RenderWindow & window);
 };

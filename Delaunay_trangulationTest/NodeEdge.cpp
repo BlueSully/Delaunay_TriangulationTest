@@ -11,6 +11,12 @@ NodeEdge::NodeEdge(Node point1, Node point2)
 	pointB = point2;
 }
 
+std::vector<Node> NodeEdge::getPoints()
+{
+	std::vector<Node> points = { pointA , pointB };
+	return points;
+}
+
 void NodeEdge::draw(sf::RenderWindow & window)
 {
 	sf::VertexArray lines(sf::Lines, 2);

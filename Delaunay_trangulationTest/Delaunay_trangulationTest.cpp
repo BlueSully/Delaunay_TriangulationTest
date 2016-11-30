@@ -31,7 +31,6 @@ int main()
 		sf::Vector2f tempPoint(rand() % window.getSize().x, rand() % window.getSize().y);
 		m_pointList.push_back(tempPoint);
 	}
-
 	Delaunay_Triangle graph(m_pointList);
 	// Start game loop 
 	while (window.isOpen())
